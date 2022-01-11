@@ -12,9 +12,7 @@ namespace Interpreter
     {
         static void Main(string[] args)
         {
-           // var domainLanguage = "order x10 '2L water bottles' from Tesco";
-		   //var domainLanguage = "/give RonTheDragon 64 minecraft:Dirt";
-		   //Console.WriteLine(Order.Parse(domainLanguage));
+          
 			Console.WriteLine("\n\tI created Minecraft Command! type:\n\t/give [player] [amount] minecraft:[item]\n");
 			while (true)
 			{
@@ -33,13 +31,7 @@ namespace Interpreter
     }
 	public class Order
 	{
-		/*
-		const string optionalSpace = " ?";
-		const string qty = "x(?<qty>\\d+)" + optionalSpace;
-		const string product = "'(?<product>[\\w ]+)'" + optionalSpace;
-		const string source = "from (?<source>\\w+)";
-		const string orderCommand = "order" + optionalSpace + qty + product + source;
-		*/
+		
 		const string optionalSpace = " ?";
 		const string player = " (?<player>\\w+)" + optionalSpace;
 		const string qty = "(?<qty>\\d+)" + optionalSpace;
